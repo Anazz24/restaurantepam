@@ -18,18 +18,13 @@ export default function Menu(){
 </View>
 <Text style= {estilo.prato}>Macarronada Italiana Típica</Text>
 <Text style={estilo.descricao}>Macarrão, Tomate, Carne, Salsa</Text>
-<Text>R$ 70,00</Text>
+<Text style={estilo.preco}>R$ 70,00</Text>
 </View>
 
-<View style= {estilo.espaco}>
-<View style=  {estilo.card2}>
-<Image style= {estilo.logo} source={carbonara}/>
-</View>
-<Text style= {estilo.prato}>Macarrão à carbonara</Text>
-<Text style={estilo.descricao2}>Macarrão, Bacon, Queijo, Vinho Branco</Text>
-<Text>R$ 70,00</Text>
-</View>
 </>
+
+
+
 }
 
  
@@ -55,53 +50,50 @@ const estilo = StyleSheet.create({
 
       },
          titulomenu:  {
-             fontSize : 26,
-             lineHeight: 42,
-             color: "#464646",
+             fontSize : 30,
+             lineHeight: 55,
+             textAlign: "center",
+             color: "#B20602",
              fontFamily: "MontserratBold"
          },
 
  
 
          espaco: {
-             paddingVertical: 40,
-             paddingHorizontal: 17
+             paddingVertical: 50,
+             paddingHorizontal: 17,
+             backgroundColor: '#7A714A'
          },
 
  
 
-          imagemFazenda: {
-              width: 32,
-              height: 32
-          },
-
- 
-
           card:{
-              flexDirection: "row",
+              flexDirection: "column",
               paddingVertical: 12
           },
           descricao:{
-              color: "A3A3A3",
+            fontSize: 15,
+            lineHeight: 30,
+            marginLeft: 12,
+              color: "#BFBFBF",
               fontStyle: "italic"
           },
-
-          card2:{
-            flexDirection: "row",
-            paddingVertical: 2
-        },
-        descricao2:{
-            color: "A3A3A3",
-            fontStyle: "italic"
-        },
-
           
 
           prato: {
-            fontSize: 16,
-            lineHeight: 26,
+            fontSize: 26,
+            lineHeight: 35,
+            marginLeft: 10,
+            fontWeight: "bold",
+            color: "#B20602"
+          },
+
+          preco:{
+            fontSize: 17,
+            lineHeight: 30,
             marginLeft: 12,
-            fontWeight: "bold"
+            fontWeight: "bold",
+            color: "#00B23A" 
           }
     })
 

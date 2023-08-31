@@ -1,5 +1,5 @@
 import { View, StatusBar, SafeAreaView } from 'react-native';
-import Carrinho from './src/pages/Carrinho';
+import Menu from './src/pages/Menu';
 import{useFonts,
        Montserrat_400Regular,
        Montserrat_700Bold,
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <SafeAreaView>
        <StatusBar/>
-   <Carrinho/>
+   <Menu/>
     </SafeAreaView>
   );
 }

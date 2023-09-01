@@ -11,6 +11,7 @@ export default function Menu(){
     return <>
     <Image source={logo} style={estilo.logo} />
     <Text style= {estilo.titulo}>Menú</Text>
+    <View style= {estilo.linha}></View>
 <View style= {estilo.espaco}>
 <Text style= {estilo.titulomenu}>Opções Menú</Text>
 <View style=  {estilo.card}>
@@ -19,8 +20,20 @@ export default function Menu(){
 <Text style= {estilo.prato}>Macarronada Italiana Típica</Text>
 <Text style={estilo.descricao}>Macarrão, Tomate, Carne, Salsa</Text>
 <Text style={estilo.preco}>R$ 70,00</Text>
+
+<View style=  {estilo.card}>
+<Image style= {estilo.logo} source={carbonara}/>
+</View>
+<Text style= {estilo.prato}>Macarrão Carbonara</Text>
+<Text style={estilo.descricao}>Macarrão, Vinho Branco, Queijo, Bacon</Text>
+<Text style={estilo.preco}>R$ 80,00</Text>
+
+
 </View>
 
+
+
+<View style= {estilo.linha}></View>
 </>
 
 
@@ -51,10 +64,9 @@ const estilo = StyleSheet.create({
       },
          titulomenu:  {
              fontSize : 30,
-             lineHeight: 55,
+             lineHeight: 40,
              textAlign: "center",
              color: "#B20602",
-             fontFamily: "MontserratBold"
          },
 
  
@@ -62,7 +74,8 @@ const estilo = StyleSheet.create({
          espaco: {
              paddingVertical: 50,
              paddingHorizontal: 17,
-             backgroundColor: '#7A714A'
+             backgroundColor: '#7A714A',
+             paddingTop: 7,
          },
 
  
@@ -94,6 +107,12 @@ const estilo = StyleSheet.create({
             marginLeft: 12,
             fontWeight: "bold",
             color: "#00B23A" 
-          }
+          },
+
+          linha:{
+              width: "100%",
+              height: 12,
+              backgroundColor: "#F29F05"
+          },
     })
 
